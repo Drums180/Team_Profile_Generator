@@ -85,13 +85,25 @@ In the team roster generator, the tests are run using the Jest testing framework
 
 To run the tests, you need to open your terminal or command prompt, navigate to the project directory, and then run the following command:
 
-bash
 ```
-npm run test`
+npm run test
 ```
 
 This will run all the tests in the test folder and output the results to the terminal.
 
+```
+> jest
+
+ PASS  tests/intern.test.js
+ PASS  tests/engineer.test.js
+ PASS  tests/employee.test.js
+ PASS  tests/manager.test.js
+
+Test Suites: 4 passed, 4 total
+Tests:       16 passed, 16 total
+Snapshots:   0 total
+Time:        0.533 s, estimated 1 s
+```
 
 ## Criteria 3: Generate File
 After the user has provided the necessary information through the prompts, a new file is created and the data is dynamically inserted into an HTML template.
