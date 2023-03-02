@@ -1,5 +1,13 @@
 {
+  "name": "my-project",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
   }
 }
