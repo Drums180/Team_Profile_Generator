@@ -1,4 +1,3 @@
-const Employee = require("./lib/employee");
 const Manager = require("./lib/manager");
 const Intern = require("./lib/intern");
 const Engineer = require("./lib/engineer");
@@ -150,7 +149,7 @@ function generateHtml(teamMembers) {
     let extraLabel = '';
     
     if (member.getRole() === 'Engineer') {
-      extraInfo = member.getGithub();
+      extraInfo = '<a href="https://github.com/' + member.getGithub() + '">' + member.getGithub() + '</a>';
       extraLabel = 'GitHub';
     } else if (member.getRole() === 'Intern') {
       extraInfo = member.getSchool();
